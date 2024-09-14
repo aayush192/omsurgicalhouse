@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon with Neumorphism Effect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Neumorphic Shadow Effect */
+    .shadow-neumorph {
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                  -8px -8px 16px rgba(255, 255, 255, 0.9);
+    }
+
+    /* Hover Morphing Effect */
+    button:hover {
+      box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), 
+                  -12px -12px 24px rgba(255, 255, 255, 0.9);
+      transform: scale(1.05);
+    }
+
+    /* For Social Icons */
+    .icon-neumorph {
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15),
+                  -4px -4px 8px rgba(255, 255, 255, 0.7);
+    }
+
+    /* Hover Effect for Social Icons */
+    .icon-neumorph:hover {
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2),
+                  -8px -8px 16px rgba(255, 255, 255, 0.9);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-purple-100 to-blue-100 min-h-screen flex items-center justify-center">
+  
+  <!-- Main Container -->
+  <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-xl relative">
+    
+    <!-- Header with Logo and Time -->
+    <div class="flex justify-between items-center text-gray-400">
+      <span class="text-sm">9:41</span>
+      <div class="flex items-center">
+        <img src="omsurgicalhouse.png" alt="Logo" class="h-6 w-6 mr-1">
+      </div>
+      <span class="text-sm">100%</span>
+    </div>
+
+    <!-- Emoji and Main Text -->
+    <div class="text-center mt-6">
+      <span class="text-5xl">👍</span>
+      <h1 class="text-xl font-bold mt-4">We're Still</h1>
+      <h2 class="text-2xl font-bold text-blue-600">Cooking Our Website.</h2>
+      <p class="text-gray-500 mt-2">We are going to launch our website very soon. Stay tuned.</p>
+    </div>
+
+    <!-- Neumorphic Notify Me Button -->
+    <div class="mt-6 flex justify-center">
+      <button class="flex items-center bg-blue-600 text-white py-3 px-6 rounded-full shadow-neumorph transition-all duration-300 transform hover:scale-105">
+        <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4-4m0 0l-4 4m4-4v12"></path></svg>
+        Notify Me
+      </button>
+    </div>
+
+    <!-- Footer with Social Icons -->
+    <div class="flex justify-center mt-6 space-x-4 text-gray-400">
+      <a href="#" class="icon-neumorph p-2 bg-white rounded-full transition-all duration-300 transform hover:scale-105">
+        <img src="facebook.jpg" alt="Dribbble" class="h-6 w-6">
+      </a>
+      <a href="#" class="icon-neumorph p-2 bg-white rounded-full transition-all duration-300 transform hover:scale-105">
+        <img src="instagram.jpg" alt="Instagram" class="h-6 w-6">
+      </a>
+      <a href="#" class="icon-neumorph p-2 bg-white rounded-full transition-all duration-300 transform hover:scale-105">
+        <img src="linkedin.png" alt="LinkedIn" class="h-6 w-6">
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript for button interaction -->
+  <script>
+    document.querySelector('button').addEventListener('click', function() {
+      alert('Thank you! We will notify you when the site is ready.');
+    });
+  </script>
+  
+</body>
+</html>
